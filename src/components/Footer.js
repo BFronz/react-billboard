@@ -23,7 +23,7 @@ class Footer extends Component {
     render() {
         return (
             <footer style={styles.footer}>
-                <p style={styles.footerText}>&copy; Some Company | 2019 </p>
+                <p style={styles.footerText}>&copy; RLF Inc. | 2020 </p>
             </footer>
         );
     }

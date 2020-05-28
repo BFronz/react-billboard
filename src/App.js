@@ -9,11 +9,11 @@ class App extends Component {
 
   state = {
     user: {
-      name: 'John',
-      age: 31,
-      email: 'johndoe@gmail.com',
-      address: '1234 Shadow Street, Salt Lake City, UT 84116',
-      phone: '801-838-9393'
+      name: 'Bob',
+      age: 60,
+      email: 'bfronz1960@gmail.com',
+      address: 'Phillipsburg, New Jersey',
+      phone: '999-999-9999'
     }
   }
 
@@ -26,10 +26,10 @@ class App extends Component {
         <header className="App-header">
 
           {/* Add props to <Header /> to customize the welcome greeting */}
-          <Header />
+          <Header name={this.state.user.name}/>
 
           {/* Add props to <Main /> pass down the user profile */}
-          <Main />
+          <Main user={this.state.user} />
 
           <Footer />
 

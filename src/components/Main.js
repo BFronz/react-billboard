@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/Main.css";
+// import "../styles/Main.css";
 
 const styles = {
     // move the contents of respective .css file to this styles object
@@ -22,7 +22,7 @@ class Main extends Component {
     render() {
 
 
-        if(user.lenght){
+        if(this.props.user.lenght){
             return (
             <section style={styles.main}>
                 <h2> User Profile </h2>
